@@ -1,0 +1,58 @@
+<mvc:View
+	controllerName="UI.App"
+	displayBlock="true"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:tnt="sap.tnt"
+	xmlns:table="sap.ui.table"
+	xmlns="sap.m">
+	<App id="app">
+		<Page title="Metering App">
+			<l:VerticalLayout background="Light" class="sapUiContentPadding">
+				<HBox class="sapUiSmallMarginTop">
+					<core:Icon src="sap-icon://end-user-experience-monitoring" class="sapUiSmallMarginEnd"/>
+					<Title text="Meter Readings" />
+				</HBox>
+				<table:Table id="meterTable" rows="{data>/}" selectionMode="None">
+					<table:columns>
+						<table:Column >
+							<Label text="Reading ID"/>
+							<table:template>
+								<Text text="{data>id}" ></Text>
+							</table:template>
+						</table:Column>
+						<table:Column >
+							<Label text="Customer ID"/>
+							<table:template>
+								<Text text="{data>customer_id}" ></Text>
+							</table:template>
+						</table:Column>
+						<table:Column >
+							<Label text="Reading Date"/>
+							<table:template>
+								<Text text="{data>reading_date}" ></Text>
+							</table:template>
+						</table:Column>
+						<table:Column >
+							<Label text="Meter ID"/>
+							<table:template>
+								<Text text="{data>meter_id}" ></Text>
+							</table:template>
+						</table:Column>
+						<table:Column >
+							<Label text="Reading kWh"/>
+							<table:template>
+								<Text text="{data>meter_reading}" >
+									<customData>
+										<core:CustomData key="status" value="{data>status}" writeToDom="true"></core:CustomData>
+									</customData>
+								</Text>
+							</table:template>
+						</table:Column>
+					</table:columns>
+				</table:Table>
+			</l:VerticalLayout>
+		</Page>
+	</App>
+</mvc:View>
