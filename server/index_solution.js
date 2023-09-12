@@ -7,7 +7,7 @@ const port = 3000;
 let internalState = [];
 
 app.get("/server/meterReadings", (req, res) => {
-  res.send(internalState);
+  res.send(analyzeData(internalState));
 });
 
 app.use("/webapp", express.static("./webapp"));
@@ -16,10 +16,7 @@ console.log(__dirname);
 app.listen(port, () => {
   fs.createReadStream(__dirname + "/data.csv")
     .pipe(csv())
-    .on("data", (data) => internalState.push(data))
-    .on("end", () => {
-      internalState = analyzeData(internalState);
-    });
+    .on("data", (data) => internalState.push(data));
 
   console.log(`App listening on port ${port}`);
 });

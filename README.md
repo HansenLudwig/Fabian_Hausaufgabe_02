@@ -53,6 +53,8 @@ Dieses Attribut wird vom Frontend bereits gesetzt, wenn ein Messwert in der Prop
 }
 ```
 
+In allen anderen Fällen soll der Status `Okay` gesetzt werden.
+
 Ihre Aufgabe besteht nun darin im Server die Daten innerhalb der Funktion `function analyzeData(aData)` entsprechend zu analysieren und ggf. den Wert `status: "Warning"` zu setzen.
 
 ## Abgabe
