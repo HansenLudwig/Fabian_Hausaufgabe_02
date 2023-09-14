@@ -66,4 +66,4 @@ Ihre Aufgabe besteht nun darin im Server die Daten innerhalb der Funktion `funct
 
 ## Abgabe
 
-Die BewerberInnen werden darum gebeten Ihre Lösung mittels eines Pull Requests auf dieses Repository einzureichen.
+Die BewerberInnen werden darum gebeten Ihre Lösung mittels eines [Pull Requests](https://github.com/fabiantschirschnitz/take_home_exercise/compare) auf dieses Repository einzureichen.
