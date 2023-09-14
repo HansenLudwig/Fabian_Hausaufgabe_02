@@ -1,5 +1,12 @@
 # Take-Home-Exercise für BewerberInnen als Entwickler
 
+## Die Aufgabe
+Schön, dass Sie sich die Zeit nehmen diese Aufgabe anzugehen.
+
+Wir gehen davon aus, dass Sie mindestens zwei Stunden für die Implementierung dieser Funktion benötigen, möchten aber betonen, dass es keine bestimmte Deadline oder eine tickende Uhr für die Implementierungszeit gibt. Es steht Ihnen frei, die Arbeit auf mehrere Tage aufzuteilen. Das Ziel dieser Übung ist es, ein gutes Gefühl dafür zu bekommen, wie Sie Software entwickeln.
+
+Denken Sie bitte auch daran, dass Sie nicht ausdrücklich auf vier Stunden beschränkt sind. Wenn Sie mehr Zeit aufwenden möchten, um eine neue Bibliothek oder Technologie zu erlernen, oder einfach nur, um die Sache noch besser zu machen, können Sie das natürlich tun.
+
 ## Die Anwendung
 
 Im Rahmen dieser Aufgabe soll eine vorgegebene Client-/Server-Anwendung erweitert werden.
