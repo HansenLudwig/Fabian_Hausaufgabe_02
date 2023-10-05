@@ -1,17 +1,18 @@
 # Take-Home-Exercise für BewerberInnen als Entwickler
 
 ## Die Aufgabe
-Schön, dass Sie sich die Zeit nehmen diese Aufgabe anzugehen.
 
-Wir gehen davon aus, dass Sie mindestens zwei Stunden für die Implementierung dieser Funktion benötigen, möchten aber betonen, dass es keine bestimmte Deadline oder eine tickende Uhr für die Implementierungszeit gibt. Es steht Ihnen frei, die Arbeit auf mehrere Tage aufzuteilen. Das Ziel dieser Übung ist es, ein gutes Gefühl dafür zu bekommen, wie Sie Software entwickeln.
+Schön, dass Du Dir die Zeit nimmst, diese Aufgabe anzugehen.
 
-Denken Sie bitte auch daran, dass Sie nicht ausdrücklich auf vier Stunden beschränkt sind. Wenn Sie mehr Zeit aufwenden möchten, um eine neue Bibliothek oder Technologie zu erlernen, oder einfach nur, um die Sache noch besser zu machen, können Sie das natürlich tun.
+Wir gehen davon aus, dass Du mindestens zwei Stunden für die Implementierung dieser Funktion benötigst, möchten aber betonen, dass es keine bestimmte Deadline oder eine tickende Uhr für die Implementierungszeit gibt. Es steht Dir frei, die Arbeit auf mehrere Tage aufzuteilen. Das Ziel dieser Übung ist es, ein gutes Gefühl dafür zu bekommen, wie Du Software entwickelst.
+
+Behalte im Hinterkopf, dass Du nicht ausdrücklich auf eine bestimmte Zeit beschränkt bist. Wenn Du mehr Zeit aufwenden möchtest, um eine neue Bibliothek oder Technologie zu erlernen, oder einfach nur, um die Sache noch besser zu machen, kannst Du das natürlich tun.
 
 ## Die Anwendung
 
 Im Rahmen dieser Aufgabe soll eine vorgegebene Client-/Server-Anwendung erweitert werden.
 
-Diese Anwendung simuliert eine simple Zählerdaten-Anzeige, die ihre Daten aus dem Backend enthält.
+Diese Anwendung simuliert eine simple Zählerdaten-Anzeige, die ihre Daten aus dem Backend erhält.
 
 Hierzu werden die Daten aus einer CSV-Datei zu Beginn des Server-Starts geladen.
 
@@ -62,8 +63,9 @@ Dieses Attribut wird vom Frontend bereits gesetzt, wenn ein Messwert in der Prop
 
 In allen anderen Fällen soll der Status `Okay` gesetzt werden.
 
-Ihre Aufgabe besteht nun darin im Server die Daten innerhalb der Funktion `function analyzeData(aData)` entsprechend zu analysieren und ggf. den Wert `status: "Warning"` zu setzen.
+Deine Aufgabe besteht nun darin, im Server die Daten innerhalb der Funktion `function analyzeData(aData)` entsprechend zu analysieren und ggf. den Wert `status: "Warning"` zu setzen.
+
 
 ## Abgabe
 
-Die BewerberInnen werden darum gebeten Ihre Lösung mittels eines [Pull Requests](/fabiantschirschnitz/take_home_exercise/pulls) auf dieses Repository einzureichen.
+Die BewerberInnen werden darum gebeten, ihre Lösung mittels eines [Pull Requests](/fabiantschirschnitz/take_home_exercise/pulls) auf dieses Repository einzureichen.
