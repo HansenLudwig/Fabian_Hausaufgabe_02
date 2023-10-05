@@ -68,4 +68,4 @@ Deine Aufgabe besteht nun darin, im Server die Daten innerhalb der Funktion `fun
 
 ## Abgabe
 
-Die BewerberInnen werden darum gebeten, ihre Lösung mittels eines [Pull Requests](/fabiantschirschnitz/take_home_exercise/pulls) auf dieses Repository einzureichen.
+Die BewerberInnen werden darum gebeten, ihre Lösung mittels eines [Pull Requests](https://github.com/fabiantschirschnitz/take_home_exercise/pulls) auf dieses Repository einzureichen.
