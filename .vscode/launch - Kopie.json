@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Attach-Default",
+            "type": "chrome",
+            "request": "attach",
+            //  "url": "http://localhost:3000/webapp/index.html"
+            "address": "localhost",
+            "port": 3000
+        }, 
+        {
+            "name": "Chrome: lh:3000",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000/webapp/index.html",
+            "webRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "使用本机 Chrome 调试",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000/webapp/index.html",
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}",
+            "userDataDir": "${tmpdir}"
+        },
+        {
+            "type": "node-terminal",
+            "name": "运行脚本: test",
+            "request": "launch",
+            "command": "npm run test",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
