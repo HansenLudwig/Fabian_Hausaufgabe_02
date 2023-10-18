@@ -15,14 +15,13 @@ Enter the type of calculation at the end of the URL and enter two numbers as par
 Input like:
 
 ```URL
-{
 .../sum?operand1=42&operand2=45
 .../multiply?operand1=42&operand2=45
 .../sum {operand1: 42, operand: 45}
-}
 ```
 
 Output (For the 1st. input example above):
+
 `87` or
 ```
 42 + 45 = 87

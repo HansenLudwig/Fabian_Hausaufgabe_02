@@ -3,26 +3,71 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Quickstart</title>
-    <script id="sap-ui-bootstrap" src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
-        data-sap-ui-theme="sap_belize" data-sap-ui-libs="sap.m, sap.ui.layout, sap.tnt"
-        data-sap-ui-resourceroots='{"UI": "./"}' data-sap-ui-async="true"></script>
+    <title>Fabian Exercise 02</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
     <script>
-        sap.ui.getCore().attachInit(function () {
-            sap.ui.require(["sap/ui/core/mvc/XMLView"], function (XMLView) {
-                XMLView.create({ viewName: "UI.App" }).then(function (oView) {
-                    oView.placeAt("content");
+        $(document).ready(function(){
+            $("button").click(function(){
+                // alert('Clicked.')
+            
+                const opter = $('input[name=operator]:checked').val();
+                const op1 = $("#calc_op1").val();
+                const op2 = $("#calc_op2").val();
+                /*
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:3000/webapp/"+opter+'?operand1='+op1+'&operand2='+op2,
+                    success: function(result) {
+                        console.log(result)
+                    }
+                });
+                */
+                const c_url = "http://localhost:3000/webapp/"+opter+'?operand1='+op1+'&operand2='+op2
+                $.get(c_url, function(data, status){
+                    alert("Status: " + status + "\nResult: " + data.data)
                 });
             });
         });
     </script>
-    <style>
-        span[data-status="Warning"]{	
-            background:   #ff9933;
-        }
-    </style>
 </head>
 
-<body class="sapUiBody" id="content"></body>
+<body id="content">
+    <div>
+        <label for="calc_op1">Operand1:</label>
+        <input id="calc_op1" type="text" name="number1" value="0"/><br/>
+    </div>
+    <div>
+        <label for="calc_op2">Operand2:</label>
+        <input id="calc_op2" type="text" name="number2" value="0"/><br/>
+    </div>
+
+    <fieldset>
+        <legend> Operation:</legend>
+        <div>
+            <input type="radio" id="calc_Sum" name="operator" value="sum" checked="checked"/>
+            <label for="calc_Sum">Add</label>
+        </div>
+        <div>
+            <input type="radio" id="calc_Mul" name="operator" value="multiply"/>
+            <label for="calc_Mul">Multiply</label>
+        </div>
+    </fieldset>
+
+    <button id="calc_start" onclick="">Calculate</button>
+    <p>URL Version:
+        <br>&nbsp;&nbsp;http://localhost:3000/webapp/sum?operand1=42&operand2=45
+        <br>&nbsp;&nbsp;http://localhost:3000/webapp/multiply?operand1=42&operand2=45
+    </p>
+    <p>Postman Version:
+        <br>&nbsp;Set operand1 and operand2 in Heade
+        <br>&nbsp;&nbsp;POST: http://localhost:3000/webapp/sum
+        <br>&nbsp;&nbsp;POST: http://localhost:3000/webapp/multiply
+    </p>
+
+</body>
+
+
+
 
 </html>
