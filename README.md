@@ -33,3 +33,8 @@ Output (For the 1st. input example above):
 2. `npm install` in diesem Verzeichnis ausführen
 3. `npm run start` ausführen um die Anwendung zu starten
 4. Im Browser `http://localhost:3000/webapp/index.html` ansteuern
+
+
+## Examples (Actually my personal run results)
+
+See Forder `Screenshot`.
